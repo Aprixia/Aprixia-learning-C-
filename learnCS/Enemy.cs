@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace learnCS
@@ -10,13 +11,19 @@ namespace learnCS
         public int level;
         public int atk;
         public int def;
+        public int hp;
+        public int maxHP;
+        public int moneyReward;
 
-        public Enemy(string enemyName, int enemyLevel, int enemyATK, int enemyDEF)
+        public Enemy(string enemyName, int enemyLevel, int enemyATK, int enemyDEF, int enemyHP, int enemyMaxHP, int enemyReward)
         {
             name = enemyName;
             level = enemyLevel;
             atk = enemyATK;
             def = enemyDEF;
+            hp = enemyHP;
+            maxHP = enemyMaxHP;
+            moneyReward = enemyReward;
         }
     }
 }
